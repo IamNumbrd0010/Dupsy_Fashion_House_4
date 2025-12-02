@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home | Dupsy Aura </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <!-- <header>
+    <nav>
+      <h1 class="logo" 
+    style="font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 50; white-space: nowrap;">
+  <span style="color: #007BFF;">DAF</span>
+  <span style="color: #D63384;">House</span>
+</h1>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <header>
+    <nav class="navbar">
+      
+      <div class="logo-container">
+        <img src="j/logo.png" alt="DAF House Logo" class="nav-logo">
+  
+        <h1 class="logo" 
+        style="font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 50; white-space: nowrap; margin: 0;">
+          <span style="color: #007BFF;">DAF</span>
+          <span style="color: #D63384;">House</span>
+        </h1>
+      </div>
+  
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+    </nav>
+  </header>
+  
+
+  <!-- Hero Slideshow -->
+  <section class="hero-slideshow">
+    <div class="slide fade" style="background-image:url(fashion_images/2.png);"></div>
+    <div class="slide fade" style="background-image:url(fashion_images/8.png);"></div>
+    <div class="slide fade" style="background-image:url(fashion_images/1.png);"></div>
+
+    <div class="hero-text">
+      <h2>Redefining Elegance</h2>
+      <p>Fashion that celebrates individuality and timeless beauty.</p>
+      <a href="gallery.html" class="btn">Explore Our Collection</a>
+    
+  </section>
+
+  <!-- Featured Collection -->
+  <section class="featured">
+    <h2>Featured Collection</h2>
+    <div class="gallery-grid">
+      <img src="fashion_images/3-1.png" alt="">
+      <img src="fashion_images/4-1.png" alt="">
+      <img src="fashion_images/6-1.png" alt="">
+      <img src="j/8-1.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Sketches & Moodboard Preview -->
+<section class="sketch-preview">
+  <h2>Sketches & Moodboard</h2>
+  <p class="sketch-text">
+    Explore the creative foundation behind our designs — hand-drawn sketches and moodboard concepts 
+    that shape every collection. Have a glimpse at the vision, inspiration, and artistic process 
+    behind each piece.
+  </p>
+
+  <div class="sketch-grid">
+    <div class="sketch-item">
+      <img src="j/1.jpg" alt="Pencil Sketch 1">
+      <p class="caption">Pencil Sketch – Concept Silhouette</p>
+    </div>
+
+    <div class="sketch-item">
+      <img src="j/4.jpg" alt="Pencil Sketch 2">
+      <p class="caption">Moodboard – Color Harmony</p>
+    </div>
+
+    <div class="sketch-item">
+      <img src="j/5.jpg" alt="Pencil Sketch 3">
+      <p class="caption">Design Draft – Style Breakdown</p>
+    </div>
+  </div>
+
+  <a href="gallery.html" class="btn-outline">View More Sketches</a>
+</section>
+
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="content">
+      <h2>Our Story</h2>
+      <p>At <strong>Dupsy Aura Fashion House</strong>, we blend craftsmanship with culture to create
+      pieces that empower confidence. Our designs are born from passion, purpose, and
+      a deep appreciation for self-expression.</p>
+      <a href="about.html" class="btn-outline">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>“Absolutely in love with their pieces! The quality and detail are stunning.”</p>
+        <h4>- Amira K.</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Effortless style with a modern twist. This brand is my go-to.”</p>
+        <h4>- Chioma O.</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Elegant, confident, and sustainable — just what fashion needs today.”</p>
+        <h4>- Bella R.</h4>
+      </div>
+    </div> 
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Join Our Style Circle</h2>
+    <p>Get exclusive offers, new arrivals, and behind-the-scenes updates.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2017, DAF House | All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Slideshow JavaScript
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    showSlides();
+  </script>
+
+</body>
+</html>
